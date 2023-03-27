@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,38 +12,94 @@
 
     <!-- common.css -->
     <link rel="stylesheet" href="../css/common.css">
-    
+
     <!-- book.css -->
     <link rel="stylesheet" href="../css/book.css">
 
+    <!-- book.js -->
+    <script src="../js/book.js" defer></script>
+
 
 </head>
+
 <body>
+    <header> header </header>
     <div class="main-screen">
-        <section class="container-book clearfix">
-            <div class="part-book movie-book">
+        <section class="container clearfix">
+            <div class="part movie">
                 <div class="title">영화</div>
-                
+                <div class="movie-wrap">
+                    <div class="order"> <a href="">예매율순</a></div>
+                    <div class="movie-list">
+                        <ul>
+                            <li class="ban12">더퍼스트슬램덩크</li>
+                            <li class="ban12">스즈메의문단속</li>
+                            <li class="ban12">던전앤드래곤-도적들의 명예</li>
+                            <li class="ban15">웅남이</li>
+                            <li class="all">엘카미노</li>
+                            <li class="ban12">흐르다</li>
+                            <li class="ban12">소울메이트</li>
+                            <li class="ban12">오토라는남자</li>
+                            <li class="ban12">여섯개의밤</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="part-book theater-book">
+            <div class="part theater">
                 <div class="title">극장</div>
-                
+
+                <div class="theater-content-wrap">
+                    <div class="region-wrap">
+                        <ul class="region">
+                            <li id="Seoul">서울</li>
+                            <li id="Gyeonggi">경기</li>
+                            <li id="Incheon">인천</li>
+                            <li id="Gangwon">강원</li>
+                            <li id="Chungcheong">대전/충청</li>
+                            <li id="Daegu">대구</li>
+                            <li id="Busan">부산/울산</li>
+                            <li id="Gyeongsang">경상</li>
+                            <li id="Jeolla">광주/전라/제주</li>
+                        </ul>
+                    </div>
+                    <div class="city-wrap">
+                        <ul class="city Seoul">
+                            <li>강남</li>
+                            <li>강변</li>
+                            <li>건대입구</li>
+                        </ul>
+                        <ul class="city Gyeonggi">
+                            <li>경기광주</li>
+                            <li>고양행신</li>
+                            <li>광교</li>
+                        </ul>
+                        <ul class="city Incheon">
+                            <li>계양</li>
+                            <li>부평</li>
+                            <li>송도타임스페이스</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="part-book date-book">
+            <div class="part date">
                 <div class="title">날짜</div>
-                
+
             </div>
-            <div class="part-book time-book">
+            <div class="part time">
                 <div class="title">시간</div>
 
             </div>
 
 
         </section>
-        <section class="check-content-book">
+        <section class="check-content">
 
 
         </section>
     </div>
+
+    <footer> footer </footer>
+
 </body>
+
 </html>
