@@ -1,0 +1,57 @@
+.main-screen .container-book {
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 80%;
+    
+}
+
+.main-screen .container-book .part-book {
+    float: left;
+    border: 1px solid lightgray;
+}
+.main-screen .container-book .part-book .title {
+    background: rgb(41, 40, 40);
+    color: lightgray;
+    text-align: center;
+    height: 5%;
+    
+    
+}
+.main-screen .container-book .movie-book {
+    /* border: 1px solid blue; */
+    width: 30%;
+    height: 100%;
+}
+.main-screen .container-book .theater-book {
+    /* border: 1px solid blue; */
+    width: 30%;
+    height: 100%;
+}
+.main-screen .container-book .date-book {
+    /* border: 1px solid blue; */
+    width: 15%;
+    height: 100%;
+}
+.main-screen .container-book .time-book {
+    /* border: 1px solid blue; */
+    width: 25%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-screen .check-content-book {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 20%;
+}
