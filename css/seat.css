@@ -5,7 +5,15 @@
     font-size: 15px;
     line-height: 1.5;
     /* font-family: NanumBarunGothic,Dotum,'돋움',sans-serif; */
+    display: flex;
+    flex-direction: column;
 }
+
+
+
+
+
+
 
 /* 버튼 기본 디자인 초기화 */
 button, .button{
@@ -14,24 +22,25 @@ button, .button{
     border-radius: 4px;
     background: rgb(255, 255, 255);
     height: 30px;
-  }
+}
 
-  img{
+img{
     max-width: 100%;
-  }
+}
 
 .quick_reserve{
     font-size: 1.8em;
     width: 100%;
-    padding: 0 0 26px 0;
+    flex: 1;
 }
 
 .container{
     display: flex;
+    flex: 9;
 }
 
 .container .left{
-    width: 65%;
+    width: 67%;
     background: pink;
     margin-right: 3%;
     border-top: 1px solid black;
@@ -42,7 +51,7 @@ button, .button{
     display: flex;
     line-height: 32px;
     background: green;
-    font-size: 1.2em;
+    font-size: 1vw;
     justify-content: space-between;
 }
 
@@ -66,7 +75,7 @@ button, .button{
     background: brown;
     display: flex;
     padding: 10px 0 10px 20px;
-    font-size: 1.1em;
+    font-size: 0.9vw;
     /* background: #f2f4f5; */
 }
 
@@ -79,41 +88,69 @@ button, .button{
 
 .container .left .seat_count .number_of_people .count_button{
     display: flex;
-    margin: 0 20px 0 10px;
+    margin: 0 20px 0 7px;
 }
 
 .left .seat_count .number_of_people .count_button .minus_button, .plus_button{
     width: 30px;
-    border-right: black;
+    border: 1px solid #ccc ;
 }
+
+.left .seat_count .number_of_people .count_button .minus_button, .selectd_seat{
+    font-size: 17px;
+}
+
+.left .seat_count .number_of_people .count_button .plus_button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.left .seat_count .number_of_people .count_button .minus_button{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
 .left .seat_count .number_of_people .count_button .selectd_seat{
     width: 40px;
+    border-top: 1px solid #ccc ;
+    border-bottom: 1px solid #ccc ;
 }
 
 .left .Choose_seat{
     width: fit-content;
-    background: #000;
-    margin: 35px auto 0; 
+    /* height: fit-content; */
+    background: red;
+    margin: 35px auto 0;
 }
+
 
 .left .Choose_seat .seat{
     border: 1px solid black;
-    height: 100px;
+    height: 100%;
 }
 
+.Choose_seat .seat div{
+    width: 16px;
+    height: 16px;
+    background: #000;
+    margin: 5px;
+}   
 /* ===========================right=========================== */
 
 .container .right{
-    width: 32%;
+    width: 30%;
     background: burlywood;
     padding: 15px 15px 0 15px;
     background: #333;
     color: #fff;
+    border-radius: 10px;
 }
 
+
 .container .right .title_area {
-   border: 1px solid blue;
-   display: flex;
+    border: 1px solid blue;
+    display: flex;
 }
 
 .container .right .title_area img{
@@ -125,18 +162,20 @@ button, .button{
 .container .right .info_area {
     border: 1px solid blue;
     margin-top: 15px;
- }
+    /* position: relative; */
+}
 
- .container .right .info_area  .other_time{
-    margin-top:15px
- }
-
+.container .right .info_area .other_time{
+    margin-top:15px;
+    padding: 5px;
+    
+}
 
 .container .right .info_area .movie_poster{
     width: 70px;
-    height: 100px;
+    height: 105px;
     background-image: url('../image/product_1.jpg');
-    float: right;
+    float: right;   
 }
 
 .container .right .choice_seat_area{
@@ -154,7 +193,7 @@ button, .button{
 
 .container .right .choice_seat_area .seat_type li{
     display: flex;
-
+    font-size: 1em;
 }
 
 .container .right .choice_seat_area .seat_type .seat_condition{
@@ -187,7 +226,9 @@ button, .button{
 
 .container .right .choice_seat_area .seat_num{
     padding: 20px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    width: 50%; 
+    text-align: center;
 }
 
 .container .right .choice_seat_area .seat_num .my_seat{
@@ -197,7 +238,45 @@ button, .button{
 } 
 
 .container .right .choice_seat_area .seat_num .my_seat div{
-    width: 50%;
+    width: 40px;
     border: 1px solid green;
     text-align: center;
+    /* padding: 5px; */
+    /* margin-bottom: 10px; */
+    
 }
+
+
+.container .right .pay{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .right .pay  .money{
+    display: flex;
+}
+
+.container .right .pay  .money em{
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #59bec9;
+}
+
+.container .right .button_group{
+    /* position : relative;
+    justify-content: space-between;  
+    display: flex;   */
+    
+}
+
+.container .right .previous_button{
+    width: 49%;
+    background-color: #53565b;
+}
+
+
+.container .right .next_button{
+    /* position : absolute; */
+    width: 49%;
+    bottom : 0;
+} 
