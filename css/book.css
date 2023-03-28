@@ -37,31 +37,36 @@
     padding: 0 0 10px 10px;
     margin-bottom: 15px;
 
+    font-size: 15px;
     font-weight: 700;
 }
-.main-screen .container .movie .movie-wrap ul {
-    
+.main-screen .container .movie .movie-wrap .movie-list ul{
+    overflow: hidden;
 }
 .main-screen .container .movie .movie-wrap .movie-list li {
     margin-bottom: 10px;
-    /* font-size: 16px; */
+    font-size: 13px;
     font-weight: 700;
     line-height: 25px;
+    height: 30px;
 }
 .main-screen .container .movie .movie-wrap .movie-list .ban12::before {
     content: '.....';
+    margin-left: 10px;
     margin-right: 10px;
     background: url("../image/ban12.png") no-repeat center / cover;
-   
+    
 }
 .main-screen .container .movie .movie-wrap .movie-list .ban15::before {
     content: '.....';
+    margin-left: 10px;
     margin-right: 10px;
     background: url("../image/ban15.png") no-repeat center / cover ;
-   
+    
 }
 .main-screen .container .movie .movie-wrap .movie-list .all::before {
     content: '.....';
+    margin-left: 10px;
     margin-right: 10px;
     background: url("../image/All.png") no-repeat center / cover ;
    
@@ -93,8 +98,8 @@
     padding: 10px;
     margin-left: 20px;
     margin-bottom: 3px;
-    font-size: 16px;
-    
+    font-size: 13px;
+    width: 100%;
 }
 .main-screen .container .theater .city-wrap{
     width: 40%;
@@ -110,18 +115,79 @@
 .main-screen .container .theater .city-wrap .city li {
     padding: 10px;
     margin-bottom: 3px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
 }
 
 /* ============================= end 극장 */
 
-
+/* ============================= start 날짜 */
 
 .main-screen .container .date {
     width: 15%;
     height: 100%;
+    
 }
+.main-screen .container .date .date-wrap {
+    padding: 20px;
+}
+.main-screen .container .date .yearmonth-wrap {
+    color: rgb(124, 123, 123);
+}
+
+.main-screen .container .date .yearmonth-wrap .year {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.main-screen .container .date .yearmonth-wrap .month {
+    text-align: center;
+    
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+}
+/* @@@@@@@@@@@@@@@ */
+.main-screen .container .date .daydate-wrap {
+    /* margin-left: 10px; */
+    align-items: center;
+    margin-left: 25px;
+    
+}
+.main-screen .container .date .daydate {
+    /* margin: 15px auto 0; */
+    margin-top: 10px;
+    padding-top: 8px;
+    
+    width: 80%;
+    height: 40px;
+    display: block;
+}
+.main-screen .container .date .daydate-wrap .day {
+    padding-left: 15px;
+    margin-right: 10px;
+    
+    
+}
+.main-screen .container .date .daydate-wrap .detaildate {
+    
+    font-weight: 700;
+    
+}
+
+
+
+/* @@@@@@@@@@@@@@@ */
+
+
+
+
+
+
+/* ============================= end 날짜 */
+
 .main-screen .container .time {
     width: 25%;
     height: 100%;
@@ -139,19 +205,45 @@
     width: 100%;
     height: 20%;
 }
-
 /* ============================= end check-content */
 
 /* ============================= 클래스 추가 / 삭제 */
 
-
-.default-color-region {
+/* .default-color-region {
     background: #d4d3c9;
+} */
+
+.main-screen .container .movie .movie-wrap .movie-list li.change-color-movie {
+    background: rgb(41, 40, 40);
+    color: #fff;
+    border: 4px double lightgray;
 }
-.default-color-city {
+
+
+
+.main-screen .container .theater .region-wrap .region li.change-color-region {
     background: #f2f0e5;
+}
+
+.main-screen .container .theater .city-wrap ul.show-city {
     display: block;
 }
+
+.main-screen .container .theater .city-wrap ul li.change-color-city {
+    background: rgb(68, 67, 67);
+    color: #fff;
+    border: 3px double lightgray;
+
+}
+
+
+.main-screen .container .date .daydate-wrap div.change-color-daydate {
+    background: rgb(68, 67, 67);
+    color: #fff;
+    border: 3px double lightgray;
+
+}
+
 
 
 
