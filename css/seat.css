@@ -7,13 +7,8 @@
     /* font-family: NanumBarunGothic,Dotum,'돋움',sans-serif; */
     display: flex;
     flex-direction: column;
+    min-width: none;
 }
-
-
-
-
-
-
 
 /* 버튼 기본 디자인 초기화 */
 button, .button{
@@ -131,11 +126,13 @@ img{
 }
 
 .Choose_seat .seat div{
-    width: 16px;
+    width: 20px;
     height: 16px;
     background: #000;
     margin: 5px;
+    border-radius: 7px 7px 2px 0px;
 }   
+
 /* ===========================right=========================== */
 
 .container .right{
@@ -145,6 +142,7 @@ img{
     background: #333;
     color: #fff;
     border-radius: 10px;
+    position: relative;
 }
 
 
@@ -241,15 +239,16 @@ img{
     width: 40px;
     border: 1px solid green;
     text-align: center;
-    /* padding: 5px; */
-    /* margin-bottom: 10px; */
-    
+    padding: 5px;
+    margin-top: 10px;    
 }
 
 
 .container .right .pay{
     display: flex;
     justify-content: space-between;
+    padding: 5px;
+    border: 1px solid #59bec9;
 }
 
 .container .right .pay  .money{
@@ -258,25 +257,35 @@ img{
 
 .container .right .pay  .money em{
     font-weight: 400;
-    font-size: 1.6em;
+    /* font-size: 1.6em; */
+    
     color: #59bec9;
 }
 
 .container .right .button_group{
-    /* position : relative;
-    justify-content: space-between;  
-    display: flex;   */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     
 }
 
 .container .right .previous_button{
-    width: 49%;
+    width: 50%;
+    height: 40px;
     background-color: #53565b;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    float: left;
 }
-
 
 .container .right .next_button{
     /* position : absolute; */
-    width: 49%;
-    bottom : 0;
+    width: 50%;
+    height: 40px;   
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
 } 
