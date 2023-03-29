@@ -24,9 +24,12 @@
         /* 사용할 화면 크기 */
         .main-screen{ 
             margin: 20px 20%;
-            width: 60%;
-            height: 70VH;
+            width: 1152px;
+            height: 756px;
             background: #000;
+            /* width: 60%;
+            height: 70VH; */
+
         }
         header{
             width: 100%;
@@ -34,10 +37,8 @@
             background: red;
         }
 
-        
         footer{
             width: 100%;
             height: 100px;
-            /* background: purple; */
+            background: purple;
         }
-    
