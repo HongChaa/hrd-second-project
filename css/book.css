@@ -49,6 +49,7 @@
     font-weight: 700;
     line-height: 25px;
     height: 30px;
+    cursor: pointer;
 }
 .main-screen .container .movie .movie-wrap .movie-list .ban12::before {
     content: '.....';
@@ -72,6 +73,9 @@
    
 }
 
+.main-screen .container .movie .movie-wrap .movie-list ul li.soldout {
+    opacity: 0.3;
+}
 /* ============================= end 영화 */
 
 /* ============================= start 극장 */
@@ -100,6 +104,7 @@
     margin-bottom: 3px;
     font-size: 13px;
     width: 100%;
+    cursor: pointer;
 }
 .main-screen .container .theater .city-wrap{
     width: 40%;
@@ -117,7 +122,8 @@
     margin-bottom: 3px;
     font-size: 12px;
     font-weight: 700;
-}
+    cursor: pointer;
+}   
 
 /* ============================= end 극장 */
 
@@ -158,12 +164,19 @@
 }
 .main-screen .container .date .daydate {
     /* margin: 15px auto 0; */
-    margin-top: 10px;
+    margin-top: 5px;
     padding-top: 8px;
     
     width: 80%;
     height: 40px;
     display: block;
+    cursor: pointer;
+}
+.main-screen .container .date  .sat {
+    color: rgb(31, 31, 156);
+}
+.main-screen .container .date  .sun {
+    color: rgb(158, 35, 35);
 }
 .main-screen .container .date .daydate-wrap .day {
     padding-left: 15px;
@@ -178,7 +191,6 @@
 }
 
 
-
 /* @@@@@@@@@@@@@@@ */
 
 
@@ -188,14 +200,80 @@
 
 /* ============================= end 날짜 */
 
+/* ============================= start 시간 */
+
+
 .main-screen .container .time {
     width: 25%;
     height: 100%;
 }
 
+.main-screen .container .time .time-wrap {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.main-screen .container .time .time-wrap .time-option {
+    border-bottom: 3px solid lightgray;
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 25px;
+    /* padding-left: 10px; */
+    height: 18px;
+}
+
+.main-screen .container .time .time-wrap .time-option .sun-image {
+    background: url('../image/sun.png') no-repeat center / cover;
+}
+.main-screen .container .time .time-wrap .time-option .moon-image {
+    background: url('../image/moon.png') no-repeat center / cover;
+    z-index: 99;
+}
+
+.main-screen .container .time .time-wrap .room {
+    height: 100px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+.main-screen .container .time .time-wrap .room .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.main-screen .container .time .time-wrap .room .section-title b {
+    color: rgb(206, 52, 52);
+}
+.main-screen .container .time .time-wrap .room .time-list {
+    border-bottom: 3px solid lightgray;
+    height: 100%;
+    margin-bottom: 10px;
+}
+.main-screen .container .time .time-wrap .room:last-child .time-list {
+    border: 0;
+}
+.main-screen .container .time .time-wrap .room .time-list li {
+    width: 30%;
+    display: inline;
+    margin: 10px 0;
+    cursor: pointer;
+    line-height: 30px;
+}
+.main-screen .container .time .time-wrap .room .time-list li .start-time {
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgb(219, 217, 217);
+    margin-right: 3px;
+    padding: 3px;
+}
+.main-screen .container .time .time-wrap .room .time-list li .left-seat {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(32, 99, 32);
+}
 
 
-
+/* ============================= end 시간 */
 
 /* ============================= start check-content */
 
@@ -242,6 +320,13 @@
     color: #fff;
     border: 3px double lightgray;
 
+}
+
+
+.main-screen .container .time .time-wrap .room .time-list li span.start-time.change-color-playtime {
+    background: rgb(68, 67, 67);
+    color: #fff;
+    border: 3px double lightgray;
 }
 
 
