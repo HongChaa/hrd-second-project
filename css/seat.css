@@ -10,6 +10,19 @@
     min-width: none;
 }
 
+.Choose_seat .a::before{
+    content: 'B ';
+    
+}
+
+
+
+
+
+
+
+
+
 /* 버튼 기본 디자인 초기화 */
 button, .button{
     border: 0;
@@ -17,6 +30,7 @@ button, .button{
     border-radius: 4px;
     background: rgb(255, 255, 255);
     height: 30px;
+    cursor: pointer;
 }
 
 img{
@@ -114,24 +128,63 @@ img{
 
 .left .Choose_seat{
     width: fit-content;
-    /* height: fit-content; */
     background: red;
     margin: 35px auto 0;
 }
 
+/* 스크린 div로 구현한다면 사용 */
+/* .left .Choose_seat .screen{
+    width: 580px;
+    height: 100px;
+    background: #000;
+} */
+/* 스크린 div로 구현한다면 사용 */
 
-.left .Choose_seat .seat{
-    border: 1px solid black;
-    height: 100%;
+
+.left .Choose_seat .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.Choose_seat .seat div{
-    width: 20px;
-    height: 16px;
-    background: #000;
-    margin: 5px;
-    border-radius: 7px 7px 2px 0px;
-}   
+.left .Choose_seat .seat{
+    background-color: #747474;
+    width: 25px;
+    height: 20px;
+    margin: 6px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.left .Choose_seat .seat:hover{
+    scale: 1.2;
+}
+
+.left .Choose_seat .seat:nth-of-type(2){
+    margin-right: 25px;
+}
+
+.left .Choose_seat .seat:nth-of-type(7){
+    margin-left: 25px;
+}
+
+.left .Choose_seat .occupiedSeat:nth-of-type(2){
+    margin-right: 25px;
+}
+.left .Choose_seat .occupiedSeat:nth-of-type(7){
+    margin-left: 25px;
+}
+
+/* 좌석 클릭 시 추가 될  클래스 */
+.left .Choose_seat .choose{
+    background-color: #fff;
+    width: 25px;
+    height: 20px;
+    margin: 6px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 /* ===========================right=========================== */
 
@@ -163,10 +216,8 @@ img{
     /* position: relative; */
 }
 
-.container .right .info_area .other_time{
+.container .right .info_area .time{
     margin-top:15px;
-    padding: 5px;
-    
 }
 
 .container .right .info_area .movie_poster{
@@ -190,14 +241,17 @@ img{
 }
 
 .container .right .choice_seat_area .seat_type li{
-    display: flex;
-    font-size: 1em;
+    /* display: flex; */
+    font-size: 0.9em;
+    margin-bottom: 5px;
 }
 
 .container .right .choice_seat_area .seat_type .seat_condition{
     width: 14px;
     height: 14px;
     margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .container .right .choice_seat_area .seat_type .choice{
@@ -247,8 +301,13 @@ img{
 .container .right .pay{
     display: flex;
     justify-content: space-between;
-    padding: 5px;
     border: 1px solid #59bec9;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    left: 0;    
+    padding: 0 15px 0 15px;
+    line-height: 38px;
 }
 
 .container .right .pay  .money{
@@ -256,10 +315,8 @@ img{
 }
 
 .container .right .pay  .money em{
-    font-weight: 400;
-    /* font-size: 1.6em; */
-    
-    color: #59bec9;
+    font-size: 1.6em;
+    margin-right: 5px;
 }
 
 .container .right .button_group{
@@ -267,7 +324,6 @@ img{
     left: 0;
     bottom: 0;
     width: 100%;
-    
 }
 
 .container .right .previous_button{
