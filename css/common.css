@@ -24,21 +24,126 @@
         /* 사용할 화면 크기 */
         .main-screen{ 
             margin: 20px 20%;
-            width: 1152px;
-            height: 756px;
+            /* width: 1152px;
+            height: 756px; */
             background: #000;
-            /* width: 60%;
-            height: 70VH; */
+            width: 60%;
+            height: 70VH;
 
         }
         header{
             width: 100%;
             height: 91px;
-            background: red;
+            background: rgb(144, 179, 164);
         }
 
         footer{
             width: 100%;
             height: 100px;
-            background: purple;
+            background: rgb(139, 139, 139);
         }
+
+
+
+        /*헤더*/
+        .hbody{
+            border: 1px solid #000;
+            width: 1800px;
+            margin: 0 auto;
+            height: 100%;
+        }
+          .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            border: 1px solid #000;
+            height: 100%;
+          }
+          .title-logo img{
+            height: auto;
+            width: 300px;
+            margin-left: 150px;
+          }
+          
+          .title-logo > a {
+            color: white;
+          }
+            #menu {
+              display: flex;
+            
+              margin-right: 250px;
+            }
+          
+            #menu > li {
+              padding: 20px 30px;
+              font-size: 20px;
+              border: 1px solid #000;
+              width: 150px;
+              border-radius: 10px;
+              background: rgb(137, 169, 155);
+              margin-right: 5px;
+              text-align: center;
+            }
+          
+            li > a {
+              color: white;
+            }
+          
+            .fab {
+              font-size: 35px;
+              color: #1DA1F2;
+            }
+          
+            .fas {
+              display: none;
+            }
+          /*footer*/
+          .fbody{
+         
+            width: 1800px;
+            margin: 0 auto;
+            height: 100%;
+          }
+          .footer-box{
+          
+            height: 50%;
+            width: 100%;
+            display: flex;
+          }
+          .address-box{
+           
+          }
+          .company-box{
+            display: flex;
+            color: white;
+            width: 980px;
+            margin: 0 auto;
+            
+          }
+          .company-box > div{
+            font-size: 0.9em;
+           
+            width: 140px;
+            text-align: center;
+            line-height: 35px;
+          }
+          .footer-logo{
+            width: 250px;
+           
+            height: 100%;
+            margin-left: 315px;
+          }
+          .footer-logo img{
+            height: auto;
+            width: 220px;
+            margin-left: 15px;
+            opacity: 40%;
+
+          }
+          .footer-address{
+            font-size: 0.8em;
+            text-align: right;
+            color: white;
+            margin-left: 322px;
+          }
