@@ -45,13 +45,14 @@ img{
     background: pink;
     margin-right: 3%;
     border-top: 1px solid black;
+    /* color: #444444; */
 }
 
 .container .left .seat-select_section{
     padding: 8px 0 7px 0;
     display: flex;
     line-height: 32px;
-    /* background: green; */
+
     font-size: 1vw;
     justify-content: space-between;
 }
@@ -175,7 +176,7 @@ img{
 .container .right{
     width: 30%;
     background: burlywood;
-    padding: 15px 15px 0 15px;
+    padding: 20px 20px 0 20px;
     background: #333;
     color: #fff;
     border-radius: 10px;
@@ -216,12 +217,12 @@ img{
 .container .right .choice_seat_area{
     display: flex;
     border-radius: 5px;
-    border: 1px solid green;
+    border: 1px solid #434343;
     margin-top: 15px;
 }
 
 .container .right .choice_seat_area .seat_type{
-    border: 1px solid orange;
+    border-right: 1px solid #434343;;
     width: 50%;
     padding: 20px;
 }
@@ -276,14 +277,16 @@ img{
 
 .container .right .choice_seat_area .seat_num .my_seat div{
     width: 40px;
-    border: 1px solid green;
+    border: 1px solid #434343;
     text-align: center;
     padding: 5px;
     margin-top: 10px;    
 }
 
 .container .right .count{
-
+    color: #c4c4c4;
+    position: absolute;
+    bottom: 90px;
 }
 
 .container .right .pay{
@@ -324,18 +327,17 @@ img{
     width: 50%;
     height: 40px;
     background-color: #53565b;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 0 0 0 10px;
     float: left;
+    font-size: 1.2em;   
+    color: #fff;
 }
 
 .container .right .next_button{
-    /* position : absolute; */
     width: 50%;
     height: 40px;   
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-
+    border-radius: 0 0 10px 0 ;
+    font-size: 1.2em;   
+    color: #fff;
+    background-color: #329eb1;
 } 

@@ -1,6 +1,7 @@
 //페이지 새로고침
 const $reset = document.querySelector('.reset');
-$reset.onclick = function () {;
+$reset.onclick = function () {
+    ;
     window.location.reload();
 }
 
@@ -38,9 +39,9 @@ for (var i = 0; i < 3; i++) {
         const $selectedSeat = e.target.previousElementSibling;
 
         //최대 선택인원 8명
-        if(clickable_Seat===8){
+        if (clickable_Seat === 8) {
             alert('인원선택은 총 8명까지 가능합니다.');
-            return; 
+            return;
         }
 
         $selectedSeat.textContent = +$selectedSeat.textContent + 1;
@@ -92,7 +93,7 @@ const $money = document.querySelector(".money").firstElementChild;
 let real_click_seat = 0; //선택된 좌석 수
 let seatArr = []; //선택한 좌석 넣을 배열
 
-$money.textContent = 0  ; 
+$money.textContent = 0;
 $chooseSeat.onclick = e => {
     e.target.classList.toggle('choose');
 
@@ -115,7 +116,7 @@ $chooseSeat.onclick = e => {
             arr(e);
         }
     }
-}   
+}
 
 
 //선택 좌석 id 출력 함수
@@ -151,15 +152,26 @@ function arr(e) {
 
 
 //최종결제 금액 & 인원수 출력 함수
-function totalPrice(){
-    let $count=document.querySelector('count');
-    let $em=document.querySelector('.money em');
+function totalPrice() {
+    let $count = document.querySelector('.count');
+    let $em = document.querySelector('.money em');
 
-    if (clickable_Seat === real_click_seat){
+    if (clickable_Seat === real_click_seat) {
         $money.textContent = total_price; //가격 출력
         $count.textContent = people_type.textContent;
         // $em.classList.add('totalprice');
-    }else{
+    } else {
         $money.textContent = 0;
+        $count.textContent ='';
     }
+}
+
+//객체 보내기
+const $next_button = document.querySelector('.next_button');
+$next_button.onclick = function () {
+    let test = {
+        seatId: seatArr,
+    };
+
+    console.log(test);
 }
