@@ -1,0 +1,103 @@
+
+
+.main-screen{
+    border: 1px solid red;
+    background: white;
+}
+.movie-ticket-box {
+width: 50%;
+height: 100%;
+border: 1px solid #fff;
+float: left;
+}
+.inside-box{
+  background: white;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6%;
+    border: 1px solid #000;
+    /* display: none; */
+}
+.inside-text-box{
+    border: 1px solid #000;
+}
+.poster-box img{
+    height: auto;
+    width: 81.7%;
+    margin-left: 9%;
+    border-radius: 15px;
+}
+
+.inside-text-box div{
+    border: 1px solid #fff;
+    height: 15.2%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.inside-text-box div:nth-child(1){
+    height: 8%;
+    text-align: end;
+    line-height: 70px;
+    margin-right: 15px;
+}
+.inside-text-box div:nth-child(2){
+    height: 16%;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    
+    
+}
+.inside-text-box div:nth-child(2) p{
+    font-size: 1.5em;
+
+    margin-top: 4%;
+    font-weight: 700;
+}
+.inside-text-box div:nth-child(2) span{
+    font-size: 0.5em;
+    
+    margin-top: 6px;
+}
+.inside-text-box div:nth-child(3) p{
+    font-size: 1em;
+  
+    font-weight: 700;
+    margin-top: 20px;
+}
+.inside-text-box div:nth-child(3) span{
+    font-size: 1.5em;
+    
+    line-height: 40px;
+    
+}
+.inside-text-box div:nth-child(4) p{
+    font-size: 1em;
+   
+    font-weight: 700;
+    margin-top: 20px;
+}
+.inside-text-box div:nth-child(4) span{
+    font-size: 1.5em;
+   
+    line-height: 40px;
+    
+}
+.inside-text-box div:nth-child(5) p{
+    font-size: 1.5em;
+ 
+    font-weight: 700;
+    margin-top: 30px;
+}
+.inside-text-box div:nth-child(6) img{
+ height: auto;
+ width: 104px;
+ margin-left: 38%;
+}
+.inside-text-box div:nth-child(7) img{
+   height: auto;
+   width: 300px;
+   margin-left: 18%;
+   margin-top: 8px;
+}

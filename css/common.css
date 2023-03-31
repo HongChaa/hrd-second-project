@@ -24,18 +24,37 @@
         /* 사용할 화면 크기 */
         .main-screen{ 
             margin: 20px 20%;
+<<<<<<< HEAD
             width: 60%;
             height: 70VH;
             /* background: #000; */
+=======
+        
+            background: #000;
+            width: 60%;
+            height: 70VH;
+
+>>>>>>> cc6db2b75b08eb1f786f47a1fb837d34fc2691d5
         }
         header{
             width: 100%;
             height: 91px;
+<<<<<<< HEAD
             background: red;
+=======
+            background: rgb(144, 179, 164);
+>>>>>>> cc6db2b75b08eb1f786f47a1fb837d34fc2691d5
         }
 
         footer{
             width: 100%;
             height: 100px;
             background: purple;
+<<<<<<< HEAD
         }
+=======
+        }
+
+
+
+>>>>>>> cc6db2b75b08eb1f786f47a1fb837d34fc2691d5

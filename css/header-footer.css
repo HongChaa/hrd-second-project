@@ -1,0 +1,105 @@
+/*헤더*/
+.hbody{
+    width: 1800px;
+    margin: 0 auto;
+    height: 100%;
+}
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  
+    height: 100%;
+  }
+  .title-logo img{
+    height: auto;
+    width: 300px;
+    margin-left: 310px;
+  }
+  
+  .title-logo > a {
+    color: white;
+  }
+    #menu {
+      display: flex;
+    
+      margin-right: 320px;
+    }
+  
+    #menu > li {
+      padding: 20px 30px;
+      font-size: 20px;
+      border: 1px solid #000;
+      width: 150px;
+      border-radius: 10px;
+      background: rgb(137, 169, 155);
+      margin-right: 5px;
+      text-align: center;
+    }
+  
+    li > a {
+      color: white;
+    }
+  
+    .fab {
+      font-size: 35px;
+      color: #1DA1F2;
+    }
+  
+    .fas {
+      display: none;
+    }
+
+     /*footer*/
+ footer{
+  background: rgb(139, 139, 139);
+}
+.fbody{
+
+  width: 1800px;
+  margin: 0 auto;
+  height: 100%;
+}
+.footer-box{
+
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.address-box{
+ 
+}
+.company-box{
+  display: flex;
+  color: white;
+  width: 980px;
+  margin: 0 auto;
+  
+}
+.company-box > div{
+  font-size: 0.9em;
+ 
+  width: 140px;
+  text-align: center;
+  line-height: 35px;
+}
+.footer-logo{
+  width: 250px;
+ 
+  height: 100%;
+  margin-left: 315px;
+}
+.footer-logo img{
+  height: auto;
+  width: 220px;
+  margin-left: 15px;
+  opacity: 40%;
+
+}
+.footer-address{
+  font-size: 0.8em;
+  text-align: right;
+  color: white;
+  margin-left: 322px;
+}
