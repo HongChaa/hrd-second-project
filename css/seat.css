@@ -51,7 +51,7 @@ img{
     padding: 8px 0 7px 0;
     display: flex;
     line-height: 32px;
-    background: green;
+    /* background: green; */
     font-size: 1vw;
     justify-content: space-between;
 }
@@ -120,7 +120,7 @@ img{
 
 .left .Choose_seat{
     width: fit-content;
-    background: red;
+    background: #59bec9;
     margin: 50px auto ;
 }
 
@@ -184,7 +184,7 @@ img{
 
 
 .container .right .title_area {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
 }
 
@@ -195,6 +195,7 @@ img{
 }
 
 .container .right .info_area {
+    padding: 10px 0 ;
     border: 1px solid blue;
     margin-top: 15px;
     /* position: relative; */
@@ -209,6 +210,7 @@ img{
     height: 105px;
     background-image: url('../image/product_1.jpg');
     float: right;   
+    margin-right: 15px;
 }
 
 .container .right .choice_seat_area{
@@ -280,15 +282,17 @@ img{
     margin-top: 10px;    
 }
 
-/* .container .right .count */
+.container .right .count{
+
+}
 
 .container .right .pay{
     display: flex;
     justify-content: space-between;
-    border: 1px solid #59bec9;
+    /* border: 1px solid #59bec9; */
     position: absolute;
     width: 100%;
-    bottom: 40px;
+    bottom: 50px;
     left: 0;    
     padding: 0 15px 0 15px;
     line-height: 38px;
@@ -300,8 +304,14 @@ img{
 
 .container .right .pay  .money em{
     font-size: 1.6em;
-    margin-right: 5px;
+    margin-right: 3px;
 }
+
+/* 최종 결제금액 출력될 때 색상 변경 */
+.totalprice{
+    color: #59bec9;
+}
+/* 최종 결제금액 출력될 때 색상 변경 */
 
 .container .right .button_group{
     position: absolute;
