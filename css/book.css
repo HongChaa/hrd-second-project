@@ -302,9 +302,37 @@
     height: 100%;
     margin-left: 20px;
     float: left;
-    /* border: 1px solid red; */
+}
+/* 사진 목록 ============================================ start */
+
+.main-screen .check-content .poster-title .slamdunk.ddd {
+    background: url('../image/slamdunk.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .suzume.ddd {
     background: url('../image/suzume.jpg') no-repeat center / 60%;
 }
+.main-screen .check-content .poster-title .dungeon.ddd {
+    background: url('../image/dungeons.jpg') no-repeat center / 60%;   
+}
+.main-screen .check-content .poster-title .woongnam.ddd {
+    background: url('../image/woongnam.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .elcamino.ddd {
+    background: url('../image/elcamino.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .soulmate.ddd {
+    background: url('../image/soulmate.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .otto.ddd {
+    background: url('../image/otto.jpg') no-repeat center / 60%;
+}
+.main-screen .check-content .poster-title .layover.ddd {
+    background: url('../image/layover.jpg') no-repeat center / 60%;
+}
+
+
+
+/* 사진 목록 ============================================ end */
 .main-screen .check-content .poster-title .title-wrap {
     margin-top: 20px;
     width: 50%;
@@ -416,6 +444,12 @@
     background: rgb(68, 67, 67);
     color: #fff;
     border: 3px double lightgray;
+}
+
+.main-screen .check-content .next-btn  a.change-color-btn {
+    background: rgb(214, 40, 40);
+    border: 3px solid #771b1b;
+    color: #fff;
 }
 
 /* ============================= 클래스 추가 / 삭제 */
