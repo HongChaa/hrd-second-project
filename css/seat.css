@@ -209,7 +209,8 @@ img{
 .container .right .info_area .movie_poster{
     width: 70px;
     height: 105px;
-    background-image: url('../image/product_1.jpg');
+    background-color: #329eb1;
+    /* background-image: url('../image/moon.png'); */
     float: right;   
     margin-right: 15px;
 }

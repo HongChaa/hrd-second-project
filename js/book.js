@@ -152,7 +152,7 @@ $room.parentElement.onclick = e => {
 const bookInfo = {
     title: "",
     location: "",
-    date: "",
+    date: "11",
     startTime: "",
     room: "",
 };
@@ -173,7 +173,8 @@ window.onload = e => {
     // }
 }
 
-
+const aaaaaaaaaa=1;
+export  {aaaaaaaaaa};
 
 
 // check-content ========================================== end

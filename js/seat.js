@@ -1,11 +1,11 @@
 //페이지 새로고침
 const $reset = document.querySelector('.reset');
 $reset.onclick = function () {
-    ;
+
     window.location.reload();
 }
 
-//좌석 깔기
+//좌석 깔기===================================
 const $rows = [...document.querySelectorAll('.row')];
 let seat_id; //좌석 아이디
 window.onload = function () {
@@ -19,11 +19,10 @@ window.onload = function () {
         }
     }
 }
-//좌석 깔기 종료
+//좌석 깔기 종료===================================
 
 
-// 인원 선택 버튼 
-//querySelectorAll로 받아오기
+// 인원 선택 버튼 ===================================
 const $minusButtons = [...document.querySelectorAll('.minus_button')];
 const $plus_buttons = [...document.querySelectorAll('.plus_button')];
 // const [$clickable_Seat1, $clickable_Seat2, $clickable_Seat3] = document.querySelectorAll('.clickable_Seat');
@@ -31,8 +30,8 @@ const $clickable_Seats = [...document.querySelectorAll('.clickable_Seat')];
 
 let clickable_Seat = 0; //선택한 관람 인원 수
 let total_price = 0; //최종 결재 금액
-let people_type //성인,청소년,우대인지
-
+let people_type; //성인,청소년,우대인지
+let people_types;
 for (var i = 0; i < 3; i++) {
     console.log(clickable_Seat);
     $plus_buttons[i].onclick = function (e) {
@@ -48,6 +47,7 @@ for (var i = 0; i < 3; i++) {
         clickable_Seat++;
 
         people_type = e.target.parentNode.previousElementSibling; //성인,청소년,우대인지 선택
+        people_types += people_type.textContent ; 
         console.log(people_type.textContent + " " + clickable_Seat);
 
         //최종결제금액 계산하는 함수 호출
@@ -67,9 +67,9 @@ for (var i = 0; i < 3; i++) {
         console.log(people_type.textContent + " " + clickable_Seat);
     };
 }
-// 인원 선택 버튼 종료
+// 인원 선택 버튼 종료===================================
 
-//최종결제금액 계산하는 함수
+//최종결제금액 계산하는 함수===================================
 function priceCount(people_type, callback) {
 
     console.log("매개변수 i : " + i);
@@ -82,9 +82,9 @@ function priceCount(people_type, callback) {
 
     return total_price;
 }
-//
+//최종결제금액 계산하는 함수 종료===================================
 
-// 좌석 선택
+// 좌석 선택===================================
 const $chooseSeat = document.querySelector('.Choose_seat');
 const $my_seat = document.querySelector('.my_seat');
 const $selectables = [...document.querySelectorAll('.selectable')];
@@ -117,9 +117,10 @@ $chooseSeat.onclick = e => {
         }
     }
 }
+// 좌석 선택 종료===================================
 
 
-//선택 좌석 id 출력 함수
+//선택 좌석 id 출력 함수===================================
 function arr(e) {
     console.log("arr함수 호출됨");
     let a = false;
@@ -149,24 +150,30 @@ function arr(e) {
 
     totalPrice();
 }
+//선택 좌석 id 출력 함수 종료===================================
 
 
-//최종결제 금액 & 인원수 출력 함수
+//최종결제 금액 & 인원수 출력 함수===================================
 function totalPrice() {
     let $count = document.querySelector('.count');
     let $em = document.querySelector('.money em');
-
+    let s;
     if (clickable_Seat === real_click_seat) {
         $money.textContent = total_price; //가격 출력
-        $count.textContent = people_type.textContent;
+        for(let i=0;i<3;i++){
+             s += ($minusButtons[i].nextElementSibling.textContent);
+        }
+        $count.textContent=s;
         // $em.classList.add('totalprice');
     } else {
         $money.textContent = 0;
         $count.textContent ='';
     }
 }
+//최종결제 금액 & 인원수 출력 함수 종료===================================
 
-//객체 보내기
+
+//객체 보내기===================================
 const $next_button = document.querySelector('.next_button');
 $next_button.onclick = function () {
     let test = {
@@ -175,3 +182,8 @@ $next_button.onclick = function () {
 
     console.log(test);
 }
+//객체 보내기 종료===================================
+
+// import { aaaaaaaaaa } from "./book.js";
+// console.log(aaaaaaaaaa);
+console.log("111");
