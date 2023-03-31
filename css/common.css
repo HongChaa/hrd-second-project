@@ -8,7 +8,7 @@
         /* body 선택자에 기본 폰트 크기와 글꼴을 넣어주세요 */
         body {
             font-size: 18px;
-            
+           
         }
 
         /* 추가 reset 사항이 있으면 아래에 적어주세요. */
@@ -21,40 +21,26 @@
             display: block;
             clear: both;
         }
-        /* 사용할 화면 크기 */
-        .main-screen{ 
-            margin: 20px 20%;
-<<<<<<< HEAD
-            width: 60%;
-            height: 70VH;
-            /* background: #000; */
-=======
-        
-            background: #000;
-            width: 60%;
-            height: 70VH;
 
->>>>>>> cc6db2b75b08eb1f786f47a1fb837d34fc2691d5
-        }
+        /* 사용할 화면 크기 */
+        
+        .main-screen{
+            margin: 20px 20%;
+            width: 60%;
+            height: 70VH;
+            border: 1px solid lightgray;
+            border-top: 0;
+                }
+
         header{
             width: 100%;
             height: 91px;
-<<<<<<< HEAD
-            background: red;
-=======
-            background: rgb(144, 179, 164);
->>>>>>> cc6db2b75b08eb1f786f47a1fb837d34fc2691d5
+            background: gray;
         }
 
         footer{
             width: 100%;
-            height: 100px;
-            background: purple;
-<<<<<<< HEAD
-        }
-=======
+            height: 20vh;
+            background: gray;
         }
 
-
-
->>>>>>> cc6db2b75b08eb1f786f47a1fb837d34fc2691d5
