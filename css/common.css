@@ -47,7 +47,6 @@
 
         /*헤더*/
         .hbody{
-            border: 1px solid #000;
             width: 1800px;
             margin: 0 auto;
             height: 100%;
@@ -57,13 +56,13 @@
             justify-content: space-between;
             align-items: center;
             color: white;
-            border: 1px solid #000;
+          
             height: 100%;
           }
           .title-logo img{
             height: auto;
             width: 300px;
-            margin-left: 150px;
+            margin-left: 310px;
           }
           
           .title-logo > a {
@@ -72,7 +71,7 @@
             #menu {
               display: flex;
             
-              margin-right: 250px;
+              margin-right: 320px;
             }
           
             #menu > li {
