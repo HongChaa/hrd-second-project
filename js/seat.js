@@ -1,7 +1,8 @@
-//페이지 새로고침
-const $reset = document.querySelector('.reset');
-$reset.onclick = function () {
 
+//페이지 새로고침=================================================
+const $reset = document.querySelector('.reset');
+$reset.onclick =reset;
+function reset() {
     window.location.reload();
 }
 
@@ -31,7 +32,6 @@ const $clickable_Seats = [...document.querySelectorAll('.clickable_Seat')];
 let clickable_Seat = 0; //선택한 관람 인원 수
 let total_price = 0; //최종 결재 금액
 let people_type; //성인,청소년,우대인지
-let people_types;
 for (var i = 0; i < 3; i++) {
     console.log(clickable_Seat);
     $plus_buttons[i].onclick = function (e) {
@@ -47,8 +47,6 @@ for (var i = 0; i < 3; i++) {
         clickable_Seat++;
 
         people_type = e.target.parentNode.previousElementSibling; //성인,청소년,우대인지 선택
-        people_types += people_type.textContent ; 
-        console.log(people_type.textContent + " " + clickable_Seat);
 
         //최종결제금액 계산하는 함수 호출
         total_price = priceCount(people_type.textContent, (total, price) => {
@@ -147,7 +145,6 @@ function arr(e) {
             $selectables[i].classList.add('selectable_background');
         }
     }
-
     totalPrice();
 }
 //선택 좌석 id 출력 함수 종료===================================
@@ -156,34 +153,43 @@ function arr(e) {
 //최종결제 금액 & 인원수 출력 함수===================================
 function totalPrice() {
     let $count = document.querySelector('.count');
-    let $em = document.querySelector('.money em');
-    let s;
+    let people_type_number='';
     if (clickable_Seat === real_click_seat) {
         $money.textContent = total_price; //가격 출력
-        for(let i=0;i<3;i++){
-             s += ($minusButtons[i].nextElementSibling.textContent);
+        for(let i=0;i<3;i++){  //관람인원 종류, 수출력
+            if($minusButtons[i].nextElementSibling.textContent!=='0' && $minusButtons[i].nextElementSibling.textContent!=='')
+             people_type_number += ($minusButtons[i].parentNode.previousElementSibling.textContent)
+                   +" "+($minusButtons[i].nextElementSibling.textContent)+" · ";
         }
-        $count.textContent=s;
-        // $em.classList.add('totalprice');
+
+        //마지막 문자열에서 " · " 제거
+        people_type_number=people_type_number.substring(0, people_type_number.length - 3); //이거 더 좋은 방법 있을 것 같은데.. 모르겠음....
+        $count.textContent=people_type_number; 
+        
     } else {
         $money.textContent = 0;
         $count.textContent ='';
     }
+    test.people_type_number=people_type_number; //선택 인원 타입, 수 객체에 담기
 }
 //최종결제 금액 & 인원수 출력 함수 종료===================================
 
 
 //객체 보내기===================================
 const $next_button = document.querySelector('.next_button');
-$next_button.onclick = function () {
-    let test = {
+let test = {
         seatId: seatArr,
+        people_type_number:'',
     };
 
+$next_button.onclick = function () {
     console.log(test);
 }
 //객체 보내기 종료===================================
 
-// import { aaaaaaaaaa } from "./book.js";
-// console.log(aaaaaaaaaa);
-console.log("111");
+
+// console.log("111");
+import { bookInfo } from "./book.js";
+console.log(bookInfo);
+    
+export {test};
