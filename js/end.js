@@ -14,4 +14,3 @@ $day.innerHTML = 'cinemabox 날짜<br><span>시간</span>';
 $seat.innerHTML = '스크린타입<br><span>좌석</span>';
 $headCount.innerHTML = '인원';
 $qrcode.src = '../image/소울메이트.png';
-

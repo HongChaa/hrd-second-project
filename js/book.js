@@ -1,3 +1,6 @@
+
+
+
 // <영화> 영화 목록 색깔 ======================================= start
 const $movielist = document.querySelector('.movie-list ul li');
 $movielist.parentElement.onclick = e => {
@@ -171,11 +174,11 @@ $room.parentElement.onclick = e => {
 
 // 영화 예약 정보 담는 객체 
 const bookInfo = {
-    title: "",
-    location: "",
-    date: "",
-    startTime: "",
-    room: "",
+    title: "1",
+    location: "1",
+    date: "11",
+    startTime: "1",
+    room: "1",
 };
 
 
