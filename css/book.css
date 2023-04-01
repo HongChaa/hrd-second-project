@@ -187,9 +187,7 @@
     
 }
 .main-screen .container .date .daydate-wrap .detaildate {
-    
     font-weight: 700;
-    
 }
 
 
@@ -305,28 +303,28 @@
 }
 /* 사진 목록 ============================================ start */
 
-.main-screen .check-content .poster-title .slamdunk.ddd {
+.main-screen .check-content .poster-title .slamdunk {
     background: url('../image/slamdunk.jpg') no-repeat center / 60%;
 }
-.main-screen .check-content .poster-title .suzume.ddd {
+.main-screen .check-content .poster-title .suzume {
     background: url('../image/suzume.jpg') no-repeat center / 60%;
 }
-.main-screen .check-content .poster-title .dungeon.ddd {
+.main-screen .check-content .poster-title .dungeon {
     background: url('../image/dungeons.jpg') no-repeat center / 60%;   
 }
-.main-screen .check-content .poster-title .woongnam.ddd {
+.main-screen .check-content .poster-title .woongnam {
     background: url('../image/woongnam.jpg') no-repeat center / 60%;
 }
-.main-screen .check-content .poster-title .elcamino.ddd {
+.main-screen .check-content .poster-title .elcamino {
     background: url('../image/elcamino.jpg') no-repeat center / 60%;
 }
-.main-screen .check-content .poster-title .soulmate.ddd {
+.main-screen .check-content .poster-title .soulmate {
     background: url('../image/soulmate.jpg') no-repeat center / 60%;
 }
-.main-screen .check-content .poster-title .otto.ddd {
+.main-screen .check-content .poster-title .otto {
     background: url('../image/otto.jpg') no-repeat center / 60%;
 }
-.main-screen .check-content .poster-title .layover.ddd {
+.main-screen .check-content .poster-title .layover {
     background: url('../image/layover.jpg') no-repeat center / 60%;
 }
 
