@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/seat.css">
     <link rel="stylesheet" href="../css/header-footer.css">
+    
 </head>
 
-<body>
+<body>          
     
     <!-- 헤더 시작 -->
     <header>
@@ -30,8 +31,6 @@
 
     <!-- 메인 스크린 영역 시작 -->
     <div class="main-screen">
-
-
         <div class="quick_reserve">
             <h2>좌석 선택</h2>
         </div>
@@ -77,25 +76,42 @@
                 </div>
 
                 <div class="Choose_seat">
+                    
                     <img src="../image/screen.png" alt="스크린" class="screen">
-
-                    <!-- <div class="screen"></div> -->
-                        <!-- <div class="a">                        </div> -->
-                        <div class="row"> </div>
                         
-                        <div class="row"> </div>
+                    <!-- <div class="screen"></div> -->
+    
+                        <div class="row">
+                            <span class="row_num">A</span>    
+                        </div>
+                        
+                        <div class="row">
+                            <span class="row_num">B</span>     
+                        </div>
                 
-                        <div class="row"> </div>
+                        <div class="row">
+                            <span class="row_num">C</span>     
+                        </div>
                 
-                        <div class="row"> </div>
+                        <div class="row">
+                            <span class="row_num">D</span>     
+                        </div>
                 
-                        <div class="row">  </div>
+                        <div class="row">    
+                            <span class="row_num">E</span> 
+                        </div>
                 
-                        <div class="row">  </div>
+                        <div class="row">
+                            <span class="row_num">F</span>     
+                        </div>
                 
-                        <div class="row"> </div> 
+                        <div class="row"> 
+                            <span class="row_num">G</span>  
+                        </div> 
 
-                        <div class="row"> </div>
+                        <div class="row"> 
+                            <span class="row_num">H</span> 
+                        </div>
                 </div>
             </div>
             <!-- 왼쪽 영역 종료 -->
@@ -145,14 +161,10 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="count">
-                    
-                </div>
-
-                
+                <!-- 인원 수 출력 -->
+                <div class="count"> </div>
                 <div class="pay_area">
-                    <p class="count">우대 1</p>
+                    <p class="count"></p>
                     <div class="pay">
                         <p>최종결제금액</p>
                         <div class="money">
@@ -164,7 +176,7 @@
 
                 <div class="button_group">
                     <button class="previous_button">이전</button>
-                    <button class="next_button">다음</button>
+                    <button class="next_button" onclick="">다음</button>
                 </div>
 
             </div>
@@ -201,9 +213,8 @@
         </div>
     </footer>
     <!-- 푸터 종료 -->
+    <script type="module" src="../js/seat.js"></script>
     
-    <script type="text/javascript" src="../js/seat.js"></script>
-
 </body>
 
 </html>
