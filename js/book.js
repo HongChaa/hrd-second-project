@@ -1,6 +1,4 @@
 
-
-
 // <영화> 영화 목록 색깔 ======================================= start
 const $movielist = document.querySelector('.movie-list ul li');
 $movielist.parentElement.onclick = e => {
@@ -174,32 +172,59 @@ $room.parentElement.onclick = e => {
 
 // 영화 예약 정보 담는 객체 
 const bookInfo = {
-    title: "1",
-    location: "1",
-    date: "11",
-    startTime: "1",
-    room: "1",
+    title: "",
+    location: "",
+    date: "",
+    startTime: "",
+    room: "",
 };
+// bookInfo 객체에 프로퍼티 값들이 null이 없는지 확인해주는 Flag객체
+// const flag = {
+//     index : ''
+// };
+
+
+// 좌석페이지로 넘어가는 버튼 클릭시 bookInfo객체에 null값이 있으면 페이지 이동막기 === start
+const $nextBtn = document.querySelector('.next-btn-wrap a');
+$nextBtn.onclick = e => {
+    let bookInfoIndex = '';
+    switch(index) {
+        case "title" : bookInfoIndex = "영화"; break;
+        case "location" : bookInfoIndex = "극장"; break;
+        case "date" : bookInfoIndex = "날짜"; break;
+        case "startTime" : bookInfoIndex = "시간 & 상영관"; break;
+        default : bookInfoIndex = "영화"; break;
+    }
+
+    if(!$nextBtn.classList.contains('change-color-btn')) {
+        alert(`${bookInfoIndex}를 선택해주세요.`);
+    }
+}
+
+// 좌석페이지로 넘어가는 버튼 클릭시 bookInfo객체에 null값이 있으면 페이지 이동막기 === end
 
 
 // 좌석선택페이지로 객체 넘기기
 
-const $nextBtn = document.querySelector('.next-btn-wrap a');
-
+let index = ''; // boolInfo 프로퍼티 중 몇번째 인덱스가 null인지 알려주는 값
 // bookInfo객체의 모든 프로퍼티가 입력된 상태인지 확인하는 함수 ==== start
 function bookInfoCheck() {
-    infoFullFlag = 1 // bookInfo 객체에 null 값이 없는 상태
+    let infoFullFlag = 1 // bookInfo 객체에 null 값이 없는 상태
     for (let infokey in bookInfo) {
         if (bookInfo[infokey] === "") {
-            infoFullFlag = -1
+            // console.log(bookInfo.infokey);
+            infoFullFlag = -1;
+            index = infokey;
             break;
         }
     }
 
     if (infoFullFlag === 1) {
         $nextBtn.classList.add('change-color-btn');
+        $nextBtn.pathname = "/html/seat.html";
     } else {
         $nextBtn.classList.remove('change-color-btn');
+        $nextBtn.pathname = "/html/book.html";
     }
 }
 // bookInfo객체의 모든 프로퍼티가 입력된 상태인지 확인하는 함수 ==== end
@@ -208,6 +233,8 @@ function bookInfoCheck() {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
+
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 // 좌석선택페이지로 객체 넘기기
+

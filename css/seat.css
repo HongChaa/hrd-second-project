@@ -21,7 +21,7 @@
 } */
 
 /* 버튼 기본 디자인 초기화 */
-button, .button, a{
+button, .button {
     border: 0;
     background-color: transparent;
     border-radius: 4px;
