@@ -169,7 +169,6 @@ $room.parentElement.onclick = e => {
 // <시간> 시간 선택 색깔 ==================================== end
 
 
-
 // 영화 예약 정보 담는 객체 
 const bookInfo = {
     title: "",
@@ -222,6 +221,8 @@ function bookInfoCheck() {
     if (infoFullFlag === 1) {
         $nextBtn.classList.add('change-color-btn');
         $nextBtn.pathname = "/html/seat.html";
+        console.log(bookInfo);
+        localStorage.setItem("bookinfo", JSON.stringify(bookInfo));
     } else {
         $nextBtn.classList.remove('change-color-btn');
         $nextBtn.pathname = "/html/book.html";

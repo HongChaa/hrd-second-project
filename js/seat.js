@@ -1,4 +1,4 @@
-
+const {etitle, elocation, edate, estartTime, eroom} = JSON.parse(localStorage.getItem("bookinfo"));
 //페이지 새로고침=================================================
 const $reset = document.querySelector('.reset');
 $reset.onclick =reset;
@@ -192,4 +192,3 @@ $next_button.onclick = function () {
 // import { bookInfo } from "./book.js";
 // console.log(bookInfo);
     
-export {test};
